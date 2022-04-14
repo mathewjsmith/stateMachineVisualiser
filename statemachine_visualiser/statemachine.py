@@ -4,7 +4,8 @@ from pygraphviz import AGraph
 class StateMachine:
     def __init__(self):
         self.graph = AGraph(directed=True, strict=False)
-        self.graph.add_edge('Z', 'A', key=1)
+        self.add_state('A')
+        self.add_transition('Z', 'A', 1)
 
     def add_state(self, state):
         self.graph.add_node(state)
