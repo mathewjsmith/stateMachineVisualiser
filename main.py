@@ -10,7 +10,6 @@ if __name__ == '__main__':
         try:
             print("Building the state-machine...")
             sm = build_statemachine(server)
+            sm.draw()
         except Exception as e:
             raise e
-        finally:
-            sm.draw()
