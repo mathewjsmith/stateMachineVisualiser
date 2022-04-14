@@ -8,6 +8,7 @@ if __name__ == '__main__':
         sm = None
 
         try:
+            print("Building the state-machine...")
             sm = build_statemachine(server)
         except Exception as e:
             raise e

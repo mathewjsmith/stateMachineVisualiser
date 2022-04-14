@@ -21,3 +21,4 @@ class StateMachine:
     def draw(self, filename='diagrams/statemachine.pdf'):
         self.graph.layout(prog="dot")
         self.graph.draw(filename)
+        print(f'The state-machine diagram has been written to {filename}.')
